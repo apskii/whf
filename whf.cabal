@@ -1,0 +1,37 @@
+name:               WHF
+version:            1.0
+Build-Type:         Simple
+cabal-version:      >= 1.2
+extra-source-files: include/windows_cconv.h
+
+executable WHF
+  main-is:
+    Main.hs
+  other-modules:
+    WHF.SystemInfo,
+    WHF.Memory,
+    WHF.Memory.MemoryState,
+    WHF.Memory.MemoryBasicInfo,
+    WHF.Memory.MemoryProtectionOptions
+  hs-source-dirs:
+    src
+  include-dirs:
+    include
+  build-depends:
+    base,
+    Win32
+  extensions:
+    GADTs,
+    DataKinds,
+    PolyKinds,
+    KindSignatures,
+    TypeFamilies,
+    GeneralizedNewtypeDeriving,
+    StandaloneDeriving,
+    ForeignFunctionInterface,
+    CPP,
+    TemplateHaskell,
+    MultiWayIf,
+    LambdaCase,
+    OverloadedStrings,
+    ViewPatterns
