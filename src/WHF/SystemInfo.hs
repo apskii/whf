@@ -1,5 +1,5 @@
 module WHF.SystemInfo (
-  SystemInfo(..), getSystemInfo,
+  SystemInfo, getSystemInfo,
   processorArch, pageSize,
   minAppAddr, maxAppAddr,
   activeProcessorMask, numberOfProcessors, processorType,
