@@ -4,7 +4,7 @@
 
 * Scheme of phantom type ascriptions for constraints on MemoryProtectionOptions combinations
 
-## Example memory scanner
+## Example memory scanner (only dumps info atm)
 
 ```haskell
 import WHF.Utilities
